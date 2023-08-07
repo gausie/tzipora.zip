@@ -1,12 +1,26 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import { Center, Heading, Text, calc, Flex, Container, Highlight } from "@chakra-ui/react";
+import {
+  Center,
+  Heading,
+  Text,
+  calc,
+  Flex,
+  Container,
+  Highlight,
+  useToken,
+  Stack,
+  Box,
+} from "@chakra-ui/react";
+import ReactCurvedText from "react-curved-text";
 
 const $lineHeight = "1.4375rem";
 
 export const Head: HeadFC = () => <title>Tzipora 🐣</title>;
 
 export default function IndexPage(props: PageProps) {
+  const xl4 = useToken("fontSizes", "4xl");
+
   return (
     <Container maxWidth="container.large">
       <Center height="100vh" textAlign="center">
@@ -15,7 +29,7 @@ export default function IndexPage(props: PageProps) {
             as="h1"
             size="4xl"
             maxW="16ch"
-            fontFamily="'Luckybones'"
+            fontFamily="Luckybones"
             fontStyle="normal"
             fontWeight="bold"
             lineHeight={calc($lineHeight).multiply(4).toString()}
@@ -51,6 +65,41 @@ export default function IndexPage(props: PageProps) {
               רחל
             </Text>
           </Heading>
+          <Box>
+            <ReactCurvedText
+              text="1st August 2023"
+              width={255}
+              height={75}
+              cx={125}
+              cy={-33}
+              rx={125}
+              ry={100}
+              startOffset={53}
+              textProps={{
+                fill: "#9cc19b",
+                fontFamily: "Luckybones",
+                fontSize: xl4,
+              }}
+            />
+            <ReactCurvedText
+              text="י״ד בְּאָב תשפ״ג"
+              width={255}
+              height={75}
+              cx={125}
+              cy={-15}
+              rx={130}
+              ry={90}
+              startOffset={53}
+              textProps={{
+                fill: "#6b9d6a",
+                fontFamily: "Shlomo Light Bold",
+                fontSize: xl4,
+              }}
+              svgProps={{
+                style: { marginTop: -40 },
+              }}
+            />
+          </Box>
         </Flex>
       </Center>
     </Container>
