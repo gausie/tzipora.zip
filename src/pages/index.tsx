@@ -65,7 +65,7 @@ export default function IndexPage(props: PageProps) {
               רחל
             </Text>
           </Heading>
-          <Box>
+          <Box alignSelf="center">
             <ReactCurvedText
               text="1st August 2023"
               width={255}
