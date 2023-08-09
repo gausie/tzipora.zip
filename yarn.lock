@@ -3325,6 +3325,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-curved-text@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-curved-text/-/react-curved-text-2.0.0.tgz#ff440d067128516dee3a9e841a8aa10ccceecde4"
+  integrity sha512-4qit5+wz2GGFhFOirDugAqP110T51VbBN9zSxvaRO+XGLCzU7ikOaajB7Uyzm9HWP0ue3KATeYFxZ2vzARWUag==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^18.2.7":
   version "18.2.7"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.7.tgz#67222a08c0a6ae0a0da33c3532348277c70abb63"
