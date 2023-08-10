@@ -24,7 +24,7 @@ export default function IndexPage(props: PageProps) {
   return (
     <Container maxWidth="container.large">
       <Center height="100vh" textAlign="center">
-        <Flex height="100%" direction="column">
+        <Flex height="100%" direction="column" alignItems="center">
           <Flex
             gap={$lineHeight}
             flexDir="column"
