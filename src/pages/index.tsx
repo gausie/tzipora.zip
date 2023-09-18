@@ -11,6 +11,7 @@ import {
   Highlight,
   useToken,
   Box,
+  HStack,
 } from "@chakra-ui/react";
 import ReactCurvedText from "react-curved-text";
 
@@ -107,12 +108,23 @@ export default function IndexPage(props: PageProps) {
               />
             </Box>
           </Flex>
-          <Image
-            src="/zippy.png"
-            width="80%"
-            maxWidth="280px"
-            alt="Zippy aged 1 week, 12 hours and 32 minutes"
-          />
+          <HStack>
+            {/* <Image
+              src="/tiny.png"
+              width="80%"
+              maxWidth="280px"
+              alt="Zippy aged 1 week, 12 hours and 32 minutes"
+            /> */}
+            <Image
+              marginLeft="10%"
+              src="/little.png"
+              width="80%"
+              maxWidth="500px"
+              objectFit="cover"
+              objectPosition="top"
+              alt="Zippy aged 6 weeks, 5 days, 6 hours and 11 minutes"
+            />
+          </HStack>
         </Flex>
       </Center>
     </Container>
